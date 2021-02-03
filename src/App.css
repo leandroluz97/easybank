@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  background-color: rgb(224, 224, 224);
+}
+
+:root {
+  --white: white;
+  --green: #30c88f;
+  --blue: #2d314d;
+  --grey: #9597a5;
+  --green-gradient: #33d35e;
+  --blue-gradient: #2ab6d9;
+  --font-default-small: 1.6rem;
+  --font-default-big: 1.4rem;
+  --font-default-nav: 1.8rem;
+}
