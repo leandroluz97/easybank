@@ -1,6 +1,9 @@
 .about__card {
   text-align: center;
 }
+.about__card:not(:last-child) {
+  margin-bottom: 4rem;
+}
 
 .about__card-title {
   color: var(--blue);

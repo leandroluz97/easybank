@@ -1,0 +1,38 @@
+.article__card {
+  background-color: var(--white);
+  padding-bottom: 4rem;
+  border-radius: 0.5rem;
+}
+.article__card:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.article__img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.article__content {
+  width: 80%;
+  margin: auto;
+}
+
+.article__author {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #9597a5;
+}
+.article__title {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: var(--blue);
+  font-weight: 400;
+}
+.article__body {
+  font-size: 1.3rem;
+  color: #9597a5;
+  font-weight: 200;
+  line-height: 2rem;
+}

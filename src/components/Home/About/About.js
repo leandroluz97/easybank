@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className='about'>
       <div className='row'>
-        <div className='about__header mb-big'>
+        <div className='about__header mb-big '>
           <h2 className='about__title mb-small secundary-heading'>
             Why choose Easybank?
           </h2>
@@ -17,17 +17,15 @@ const About = () => {
           </p>
         </div>
 
-        <div className='row '>
-          <div className='container'>
-            {aboutData.map((item) => (
-              <AboutItem
-                key={item.id}
-                img={item.img}
-                title={item.title}
-                copy={item.copy}
-              />
-            ))}
-          </div>
+        <div className='container'>
+          {aboutData.map((item) => (
+            <AboutItem
+              key={item.id}
+              img={item.img}
+              title={item.title}
+              copy={item.copy}
+            />
+          ))}
         </div>
       </div>
     </section>

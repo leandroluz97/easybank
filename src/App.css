@@ -51,13 +51,16 @@ body {
 }
 
 .mb-small {
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.4rem !important;
 }
 .mb-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important ;
 }
 .mb-big {
-  margin-bottom: 6rem;
+  margin-bottom: 6rem !important;
+}
+.mt-huge {
+  margin-bottom: 6rem !important;
 }
 @media (min-width: 425px) {
   .row {
@@ -71,6 +74,9 @@ body {
 
   .col-4-of-1 {
     width: 48%;
+  }
+  .secundary-heading {
+    text-align: left;
   }
 }
 @media (min-width: 768px) {

@@ -2,10 +2,32 @@
   background-color: var(--grey-light);
   padding: 10rem 0;
 }
+.about__header {
+  margin: 0 var(--side-margin);
+}
 .about_copy {
   font-size: 1.5rem;
   color: var(--grey);
   text-align: center;
   font-weight: 200;
   line-height: 2.5rem;
+}
+
+@media (min-width: 425px) {
+  .about_copy {
+    text-align: left;
+  }
+}
+
+@media (min-width: 425px) {
+  .about_copy {
+    text-align: left;
+    width: 60%;
+    margin: 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .about__header {
+    margin: 0 var(--side-margin-big);
+  }
 }
