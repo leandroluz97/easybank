@@ -1,7 +1,18 @@
 .backdrop {
   background: linear-gradient(360deg, transparent 0%, rgba(45, 49, 77, 1) 100%);
-  position: absolute;
-  z-index: -1;
+  position: fixed;
+  z-index: 99;
   height: 100vh;
   width: 100vw;
+  animation: backdrop 0.5s;
+  top: 0;
+}
+
+@keyframes backdrop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    background-color: 1;
+  }
 }

@@ -1,0 +1,11 @@
+.about {
+  background-color: var(--grey-light);
+  padding: 10rem 0;
+}
+.about_copy {
+  font-size: 1.5rem;
+  color: var(--grey);
+  text-align: center;
+  font-weight: 200;
+  line-height: 2.5rem;
+}

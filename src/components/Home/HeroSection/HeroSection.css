@@ -1,0 +1,36 @@
+.hero {
+  height: 100vh;
+
+  overflow: hidden;
+  max-width: 1200px;
+}
+.hero__wrapper {
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero__imgs {
+  position: relative;
+}
+.hero__img {
+  max-width: 90rem;
+}
+.hero__content {
+  text-align: center;
+  margin: 0 2.5rem;
+}
+.hero__imgs {
+  display: none;
+}
+.hero__title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.hero__copy {
+  font-size: 1.5rem;
+  color: var(--grey);
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,21 @@
+.about__card {
+  text-align: center;
+}
+
+.about__card-title {
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.about__card-copy {
+  color: var(--grey);
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 425px) {
+  .about__card {
+    text-align: left;
+  }
+}
