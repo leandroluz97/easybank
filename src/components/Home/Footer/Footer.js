@@ -12,11 +12,7 @@ import "./Footer.css"
 import { IconContext } from "react-icons"
 const Footer = () => {
   return (
-    <IconContext.Provider
-      value={{
-        style: { fontSize: "25px", color: "#fff" },
-      }}
-    >
+    <IconContext.Provider value={{ className: "react__icons" }}>
       <footer className='footer'>
         <div className='footer__container'>
           <div className='footer__content'>
@@ -45,7 +41,7 @@ const Footer = () => {
             <nav className='footer__nav'>
               <ul className='footer__list'>
                 <li className='footer__item'>
-                  <a href='#'>About US</a>
+                  <a href='#'>About Us</a>
                 </li>
                 <li className='footer__item'>
                   <a href='#'>Contact</a>

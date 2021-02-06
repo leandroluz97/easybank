@@ -24,8 +24,13 @@
   display: inline-block;
   font-size: 1.5rem;
   text-decoration: none;
-  color: var(--white);
+  color: white;
   padding: 1rem;
+  font-weight: 200;
+  transition: all 0.5s ease;
+}
+.footer__item a:hover {
+  color: #30c88f;
 }
 .footer__nav {
   margin-bottom: 3rem;
@@ -39,8 +44,17 @@
   font-size: 1.5rem;
   color: rgb(141, 141, 141);
   text-align: center;
+  font-weight: 200;
 }
-
+.react__icons {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.react__icons:hover {
+  color: #30c88f;
+}
 @media (min-width: 768px) {
   .footer__container {
     max-width: var(--screen-size);
