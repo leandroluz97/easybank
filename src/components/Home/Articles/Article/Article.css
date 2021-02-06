@@ -2,6 +2,13 @@
   background-color: var(--white);
   padding-bottom: 4rem;
   border-radius: 0.5rem;
+  border: solid 3px transparent;
+  transition: all 0.3s ease;
+}
+.article__card:hover {
+  cursor: pointer;
+  box-shadow: 6px 5px 20px 5px rgba(0, 0, 0, 0.03);
+  transform: translateY(-5px);
 }
 .article__card:not(:last-child) {
   margin-bottom: 2rem;
