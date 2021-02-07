@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import emailjs from "emailjs-com"
 import "./Contact.css"
 
 const Contact = () => {
@@ -6,25 +7,88 @@ const Contact = () => {
   const [userEmail, setUserEmail] = useState("")
   const [userSms, setUserSms] = useState("")
   const [error, setError] = useState("")
+  const [btn, setBtn] = useState(true)
 
-  const handleUserName = (e) => {
-    setUserName(e.target.value)
-    console.log(userName.length < 4)
+  useEffect(() => {
     if (userName.length > 0 && userName.length < 4) {
       setError("INVALID NAME! Your Name must have more than 3 characters.")
     } else {
       setError("")
     }
-  }
-  const handleUserEmail = (e) => {
-    setUserEmail(e.target.value)
-    if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(userEmail)) {
+  }, [userName])
+
+  useEffect(() => {
+    if (
+      /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(userEmail) ||
+      userEmail.length === 0
+    ) {
       setError("")
     } else {
       setError("INVALID EMAIL! Please enter a valid email.")
     }
+  }, [userEmail])
+
+  useEffect(() => {
+    if (userSms.length < 10 && userSms.length > 0) {
+      setError("Your message must have more than 20 characters.")
+    } else {
+      setError("")
+    }
+  }, [userSms])
+
+  useEffect(() => {
+    console.log(userSms)
+    if (error.length === 0 && userName && userEmail && userSms) {
+      setBtn(false)
+    } else {
+      setBtn(true)
+    }
+  }, [userName, userSms, userEmail, error])
+  const handleUserName = (e) => {
+    setUserName(e.target.value)
   }
-  const handleUserSms = (e) => {}
+  const handleUserEmail = (e) => {
+    setUserEmail(e.target.value)
+  }
+  const handleUserSms = (e) => {
+    setUserSms(e.target.value)
+  }
+
+  const {
+    REACT_APP_YOUR_SERVICE_ID,
+    REACT_APP_YOUR_TEMPLATE_ID,
+    REACT_APP_YOUR_USER_ID,
+  } = process.env
+
+  function sendEmail(e) {
+    e.preventDefault()
+
+    console.log(e.target)
+
+    emailjs
+      .sendForm(
+        REACT_APP_YOUR_SERVICE_ID,
+        REACT_APP_YOUR_TEMPLATE_ID,
+        e.target,
+        REACT_APP_YOUR_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+
+    e.target.reset()
+    setBtn(true)
+    setUserName("")
+    setUserEmail("")
+    setUserSms("")
+    setError("")
+  }
+
   return (
     <section className='contact'>
       <div className='contact__container'>
@@ -32,7 +96,7 @@ const Contact = () => {
           <h2 className='secundary-heading mb-big'>Contact us</h2>
         </div>
         <div className='contact__content'>
-          <form action='' className='form'>
+          <form action='' className='form' onSubmit={sendEmail}>
             <div className='error'>{error}</div>
             <div className='form__group'>
               <label htmlFor='name'>Name</label>
@@ -44,7 +108,7 @@ const Contact = () => {
               />
             </div>
             <div className='form__group'>
-              <label htmlFor='name'>Email</label>
+              <label htmlFor='email'>Email</label>
               <input
                 type='email'
                 name='email'
@@ -54,10 +118,16 @@ const Contact = () => {
             </div>
             <div className='form__group'>
               <label htmlFor=''>Message</label>
-              <textarea name='sms' id='sms' cols='30' rows='5'></textarea>
+              <textarea
+                name='message'
+                id='sms'
+                cols='30'
+                rows='5'
+                onChange={handleUserSms}
+              ></textarea>
             </div>
             <div className='form__group'>
-              <button className='form__btn' disabled>
+              <button className='form__btn' disabled={btn}>
                 Submit
               </button>
             </div>

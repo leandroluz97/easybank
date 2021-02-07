@@ -3,7 +3,6 @@ import "./About.css"
 import AboutItem from "./AboutItem/AboutItem"
 import { aboutData } from "./AboutData.js"
 const About = () => {
-  console.log(aboutData)
   return (
     <section className='about'>
       <div className='row'>
