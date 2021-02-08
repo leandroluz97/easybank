@@ -1,0 +1,27 @@
+.question {
+  border: solid 1px #babbc0;
+  border-radius: 0.5rem;
+  background-color: var(--grey-light);
+}
+.question__box {
+}
+.question__title {
+  font-size: 2rem;
+  color: var(--blue);
+  padding: 1.5rem 0;
+  border-bottom: solid 1px red;
+  margin: 0 2.5rem;
+  font-weight: 300;
+}
+.question__response {
+  font-size: 1.5rem;
+  color: #9597a5;
+  padding: 1.5rem 0;
+  font-weight: 200;
+  margin: 0 2.5rem;
+  line-height: 3rem;
+}
+.question__content {
+  height: 0;
+  overflow: hidden;
+}

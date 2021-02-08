@@ -1,5 +1,5 @@
 .articles {
-  padding: 10rem 0;
+  padding: 10rem 0 0 0;
 }
 .articles__content {
   margin: 0 var(--side-margin);

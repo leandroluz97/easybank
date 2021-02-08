@@ -12,6 +12,9 @@ const Navbar = () => {
   const handleMenuIcon = () => {
     setClickMenu(!clickMenu)
   }
+  const handleMenu = () => {
+    setClickMenu(false)
+  }
 
   return (
     <IconContext.Provider value={{ color: "#2d314d" }}>
@@ -31,28 +34,36 @@ const Navbar = () => {
             >
               <ul className='header__list'>
                 <li className='header__item'>
-                  <a href='#' className='header__link'>
+                  <a href='#' className='header__link' onClick={handleMenu}>
                     Home
                   </a>
                 </li>
                 <li className='header__item'>
-                  <a href='#' className='header__link'>
+                  <a
+                    href='#about'
+                    className='header__link'
+                    onClick={handleMenu}
+                  >
                     About
                   </a>
                 </li>
                 <li className='header__item'>
-                  <a href='#' className='header__link'>
-                    Contact
-                  </a>
-                </li>
-                <li className='header__item'>
-                  <a href='#' className='header__link'>
+                  <a href='#blog' className='header__link' onClick={handleMenu}>
                     Blog
                   </a>
                 </li>
                 <li className='header__item'>
-                  <a href='#' className='header__link'>
-                    Careers
+                  <a
+                    href='#contact'
+                    className='header__link'
+                    onClick={handleMenu}
+                  >
+                    Contact
+                  </a>
+                </li>
+                <li className='header__item'>
+                  <a href='#faq' className='header__link' onClick={handleMenu}>
+                    FAQ
                   </a>
                 </li>
               </ul>

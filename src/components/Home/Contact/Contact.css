@@ -98,7 +98,7 @@ textarea:focus {
 @media (min-width: 768px) {
   .contact {
     background-color: transparent;
-    padding: 0;
+    padding: 10rem 0 0 0;
     margin-bottom: 10rem;
   }
   .contact__container {

@@ -4,6 +4,7 @@ import Articles from "./Articles/Articles"
 import Contact from "./Contact/Contact"
 import Footer from "./Footer/Footer"
 import HeroSection from "./HeroSection/HeroSection"
+import Faq from "./Faq/Faq"
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Articles />
       <Contact />
+      <Faq />
       <Footer />
     </>
   )

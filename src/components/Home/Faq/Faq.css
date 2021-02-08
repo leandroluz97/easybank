@@ -1,0 +1,8 @@
+.faq__wrapper {
+  max-width: var(--screen-size);
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+.faq__container {
+  margin: 0 var(--side-margin);
+}

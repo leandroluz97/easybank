@@ -27,6 +27,10 @@
   }
 }
 @media (min-width: 768px) {
+  .about {
+    background-color: var(--grey-light);
+    padding: 10rem 0 10rem 0;
+  }
   .about__header {
     margin: 0 var(--side-margin-big);
   }

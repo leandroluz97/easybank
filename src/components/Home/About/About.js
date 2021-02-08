@@ -4,7 +4,7 @@ import AboutItem from "./AboutItem/AboutItem"
 import { aboutData } from "./AboutData.js"
 const About = () => {
   return (
-    <section className='about'>
+    <section className='about' id='about'>
       <div className='row'>
         <div className='about__header mb-big '>
           <h2 className='about__title mb-small secundary-heading'>
