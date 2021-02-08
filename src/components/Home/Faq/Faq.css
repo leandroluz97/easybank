@@ -6,3 +6,24 @@
 .faq__container {
   margin: 0 var(--side-margin);
 }
+.faq__copy {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--grey);
+  font-weight: 200;
+  line-height: 2.5rem;
+}
+@media (min-width: 425px) {
+  .faq__copy {
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--grey);
+    font-weight: 200;
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .faq__container {
+    margin: 0 var(--side-margin-big);
+  }
+}
