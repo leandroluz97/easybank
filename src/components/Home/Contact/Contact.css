@@ -99,7 +99,6 @@ textarea:focus {
   .contact {
     background-color: transparent;
     padding: 10rem 0 0 0;
-    margin-bottom: 10rem;
   }
   .contact__container {
     max-width: var(--screen-size);

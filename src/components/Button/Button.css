@@ -13,11 +13,13 @@
   border-radius: 100px;
   cursor: pointer;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
   color: white;
+  box-shadow: 0px 0px 0px 0px rgba(51, 211, 94, 1);
 }
 
 .btn:hover {
-  opacity: 0.6;
+  opacity: 1;
+  box-shadow: 0px 0px 0px 25px rgba(51, 211, 94, 0);
 }

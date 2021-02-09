@@ -3,7 +3,7 @@ import "./Question.css"
 import { IoIosArrowDropdownCircle } from "react-icons/io"
 import { IconContext } from "react-icons"
 
-const Question = () => {
+const Question = (props) => {
   const [open, setopen] = useState(false)
 
   const handleOpen = () => setopen(!open)
@@ -19,7 +19,7 @@ const Question = () => {
       <div className='question'>
         <div className='question__box'>
           <div className='question__header'>
-            <h5 className='question__title'>Can I use EmailJS for free?</h5>
+            <h5 className='question__title'>{props.title}</h5>
             <div className='question__icon' onClick={handleOpen}>
               <IoIosArrowDropdownCircle />
             </div>
