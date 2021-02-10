@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/easybank/static/css/main.72b2c241.chunk.css",
+    "main.js": "/easybank/static/js/main.528e4aaa.chunk.js",
+    "main.js.map": "/easybank/static/js/main.528e4aaa.chunk.js.map",
+    "runtime-main.js": "/easybank/static/js/runtime-main.ba3a9cad.js",
+    "runtime-main.js.map": "/easybank/static/js/runtime-main.ba3a9cad.js.map",
+    "static/js/2.3be231a9.chunk.js": "/easybank/static/js/2.3be231a9.chunk.js",
+    "static/js/2.3be231a9.chunk.js.map": "/easybank/static/js/2.3be231a9.chunk.js.map",
+    "index.html": "/easybank/index.html",
+    "static/css/main.72b2c241.chunk.css.map": "/easybank/static/css/main.72b2c241.chunk.css.map",
+    "static/js/2.3be231a9.chunk.js.LICENSE.txt": "/easybank/static/js/2.3be231a9.chunk.js.LICENSE.txt",
+    "static/media/HeroSection.css": "/easybank/static/media/phones.577991c7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba3a9cad.js",
+    "static/js/2.3be231a9.chunk.js",
+    "static/css/main.72b2c241.chunk.css",
+    "static/js/main.528e4aaa.chunk.js"
+  ]
+}
